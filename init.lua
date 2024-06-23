@@ -296,6 +296,13 @@ require('lazy').setup({
     end,
   },
   {
+    'zakissimo/smoji.nvim',
+    config = function()
+      require 'smoji'
+      vim.keymap.set('n', '<Leader><Leader>e', '<CMD>Smoji<CR>')
+    end,
+  },
+  {
     'karb94/neoscroll.nvim',
     config = function()
       require('neoscroll').setup {}
